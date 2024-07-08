@@ -110,7 +110,7 @@ body {
 	top: -115px;
 }
 .texto__encriptado {
-	background-image: url(/img/Muñeco.png);
+	background-image: url(./img/Muñeco.png);
 	background-repeat: no-repeat;
 	resize: none;
 	outline: none;
