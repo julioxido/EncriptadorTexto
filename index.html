@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="estilos.css" />
+
+		<title>Encriptador de Texto Julioto</title>
+	</head>
+	<body>
+		<header class="header">
+			<img class="logo" src="../img/Logo.png" alt="" />
+		</header>
+		<div class="contenedor">
+			<section class="cuerpo__palabra__encriptada">
+				<input
+					class="campo__palabra"
+					type="text"
+					name=""
+					id=""
+					placeholder="Ingrese el texto aqui"
+				/>
+				<p class="alerta__vacia" style="display: none">
+					No puedes dejar el campo vacio
+				</p>
+				<p class="alerta__mayuscula" style="display: none">
+					No se aceptan Mayusculas
+				</p>
+				<p class="alerta__acentos" style="display: none">
+					No puede tener acentos
+				</p>
+				<p class="alerta">🛈 Solo letras minúsculas y sin acentos</p>
+				<div class="seccion__btn">
+					<input
+						onclick="encriptarPalabra()"
+						class="btn__encriptar"
+						type="button"
+						value="Encriptar"
+					/>
+					<input
+						onclick="desencriptarPalabra()"
+						class="btn__desencriptar"
+						type="button"
+						value="Desencriptar"
+					/>
+				</div>
+			</section>
+			<section class="cuerpo__palabra__desencriptada">
+				<!-- <img class="imagen__busqueda" src="../img/Muñeco.png" alt="" /> -->
+				<textarea
+					class="texto__encriptado"
+					name=""
+					id=""
+					cols="30"
+					rows="10"
+					data-mensaje="mensaje"
+				></textarea>
+
+				<p class="ningun__msj">Ningún mensaje fue encontrado</p>
+				<p class="texto__desencriptar">
+					Ingresa el texto que desees encriptar o desencriptar.
+				</p>
+				<input
+					onclick="copiarPalabra()"
+					class="btn__copiar"
+					type="button"
+					value="Copiar"
+					style="display: none"
+				/>
+			</section>
+		</div>
+		<script src="../js/app.js"></script>
+	</body>
+</html>
